@@ -4,7 +4,8 @@ import {FETCH_HISTORY_ITEMS_REQUESTED, PUT_HISTORY_ITEM_REQUESTED} from '../cons
 import {pushHistoryItems} from '../actions/history';
 import PouchApi from '../api/pouch';
 
-const pouchApi = new PouchApi('http://127.0.0.1:5984/history');
+const pouchApi = new PouchApi(process.env.REACT_APP_DB_URL);
+// const pouchApi = new PouchApi('http://127.0.0.1:5984/history');
 
 /**
  * Запрашивает историю операций из couchDB

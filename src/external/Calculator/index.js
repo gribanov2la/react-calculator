@@ -27,7 +27,7 @@ export default class Calculator extends React.Component {
 	 *
 	 * @type {number}
 	 */
-	maxOperands = 20;
+	maxOperands = 2;
 	/**
 	 * Раскладка клавиатуры
 	 *
