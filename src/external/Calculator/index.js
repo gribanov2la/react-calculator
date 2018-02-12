@@ -29,6 +29,12 @@ export default class Calculator extends React.Component {
 	 */
 	maxOperands = 2;
 	/**
+	 * Количество чисел после запятой
+	 *
+	 * @type {Number}
+	 */
+	digitsAfterPoint = 6;
+	/**
 	 * Раскладка клавиатуры
 	 *
 	 * command: Имя метода, который будет вызван при нажатии на кнопку.
@@ -39,13 +45,6 @@ export default class Calculator extends React.Component {
 	 *
 	 * @type {Array}
 	 */
-	/**
-	 * Количество чисел после запятой
-	 *
-	 * @type {Number}
-	 */
-	digitsAfterPoint = 6;
-
 	keyboardLayout = [
 		[
 			{command: 'commandClear', caption: 'AC', theme: 'gray'},
